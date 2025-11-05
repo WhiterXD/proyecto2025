@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Huehuehue</title>
+    </head>
+    <script>
+window.addEventListener("load", () => {
+  const audio = document.getElementById("secretAudio");
+  
+  // intenta reproducir apenas entra
+  audio.play().catch(() => {
+    // si no lo permite, crea botón oculto temporal
+    const btn = document.createElement("button");
+    btn.textContent = "🔊 Activar audio secreto";
+    btn.style.position = "fixed";
+    btn.style.bottom = "20px";
+    btn.style.right = "20px";
+    btn.style.padding = "10px";
+    btn.style.fontSize = "16px";
+    
+    document.body.appendChild(btn);
+
+    btn.onclick = () => {
+      audio.play();
+      btn.remove();
+    };
+  });
+});
+</script>
+    <body background="https://png.pngtree.com/thumb_back/fh260/background/20241129/pngtree-intertwined-metal-chains-reflecting-light-image_16707439.jpg">
+        <!-- AUDIO SECRETO -->
+<audio id="secretAudio" loop>
+  <source src="hue-hue-hue-made-with-Voicemod.mp3" type="audio/mp3">
+</audio>
+
+        <Center><h1 style="color: white;">Has encontrado a metal sonic traicionado y encadenado en la pagina web por mil años</h1></Center>
+        <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDpsUocm296gLHMneal0NyIqq7otKSsPrag&s" alt="Metal sonic encadenado" width="720" height="1080"/></center>
+    </body>
+</html>

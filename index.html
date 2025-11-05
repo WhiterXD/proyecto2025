@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Componentes de una Computadora</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/jpg" href="Leo_page-0002.jpg">
+</head>
+<body>
+  <header>
+    <h1 style="color: rgb(255, 255, 255);">Componentes de una Computadora</h1>
+    <p>Haz clic en un componente para saber más.</p>
+  </header>
+
+  <main class="componentes">
+    <a href="procesador.html" class="componente">
+      <img src="https://th.bing.com/th/id/R.fc68d131b655fe7713e91e9b2441d2a0?rik=s%2bU2K2qRSRWgGA&pid=ImgRaw&r=0" alt="Procesador">
+      <h2>Procesador (CPU)</h2>
+    </a>
+
+    <a href="memoria_ram.html" class="componente">
+      <img src="https://th.bing.com/th/id/R.07a9d0ec701eccc65729daf8d1c7623c?rik=sJRPOJHCt062Zg&pid=ImgRaw&r=0" alt="Memoria RAM">
+      <h2>Memoria RAM</h2>
+    </a>
+
+    <a href="disco_duro.html" class="componente">
+      <img src="https://th.bing.com/th/id/R.94d141d4085ac5f38ef2c2c7fea8f34b?rik=lLj1JA9jB9N8mw&pid=ImgRaw&r=0" alt="Disco Duro">
+      <h2>Disco Duro</h2>
+    </a>
+
+    <a href="tarjeta_grafica.html" class="componente">
+      <img src="https://th.bing.com/th/id/R.8b6497b519f3d893bba10df1f8a676c8?rik=Ebsf0OEo0CtTwA&pid=ImgRaw&r=0" alt="Tarjeta Gráfica">
+      <h2>Tarjeta Gráfica</h2>
+    </a>
+    
+    <a href="placa madre.html" class="componente">
+      <img src="https://th.bing.com/th/id/R.662fcd846c106fb61ddf1540c0a6c22e?rik=90cHjp%2bHygEwyA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-AP-A-1WhHBw%2fTf_aw2eWn1I%2fAAAAAAAAAA8%2f2U6HZD--JAU%2fs1600%2fboard.jpg&ehk=9XWM1kBHa6HW%2bWp01HVaNCc6Aulvl4UTcPbNCTDYxCY%3d&risl=&pid=ImgRaw&r=0" alt="Placa madre">
+      <h2>Placa madre</h2>
+    </a>
+  </main>
+  
+  <hr style="margin: 40px 0;">
+
+  <header class="lenguajes">
+  <h1 style="color: rgb(255, 255, 255);">Lenguajes de Programación</h1>
+  <p style="text-align:center;">Haz clic en un lenguaje para aprender más.</p>
+  </header>
+
+  <div class="componentes">
+    <a href="html.html" class="componente">
+      <img src="https://e7.pngegg.com/pngimages/913/851/png-clipart-responsive-web-design-html-world-wide-web-consortium-world-wide-web-angle-text-thumbnail.png" alt="HTML">
+      <h2>HTML</h2>
+    </a>
+
+    <a href="javascript.html" class="componente">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+      <h2>JavaScript</h2>
+    </a>
+
+    <a href="css.html" class="componente">
+      <img src="https://www.adaweb.es/wp-content/uploads/2022/05/logotipo_css-min.png" alt="css">
+      <h2>CSS</h2>
+    </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script>
+  // palabra secreta a detectar
+  const secretWord = "huehuehue"; 
+  // página a la que redirige
+  const secretUrl = "huehuehue.html";
+
+  let userInput = "";
+
+  document.addEventListener("keydown", (e) => {
+    userInput += e.key.toLowerCase();
+
+    // mantener solo los últimos caracteres del largo de la palabra secreta
+    if (userInput.length > secretWord.length) {
+      userInput = userInput.slice(-secretWord.length);
+    }
+
+    // si coincide, redirige
+    if (userInput === secretWord) {
+      // opcional: puedes mostrar un mensaje antes
+      alert("🔓 HUEHUEHUE");
+      window.location.href = secretUrl;
+    }
+  });
+  
+</script>
+  <footer>
+    <p>Proyecto: Componentes de una Computadora © 2025</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procesador (CPU)</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center">Procesador (CPU)</h1>
+  </header>
+
+  <main class="info">
+
+    <div class="text-center">
+      <center><img src="https://th.bing.com/th/id/R.fc68d131b655fe7713e91e9b2441d2a0?rik=s%2bU2K2qRSRWgGA&pid=ImgRaw&r=0" width="500" height="300" alt="Procesador"></center>
+    </div>
+
+    <center><h2 class="section-title">¿Qué son los procesadores?</h2></center>
+    <p>El procesador es el circuito electrónico que ejecuta instrucciones de programas, obteniendo instrucciones de la memoria, decodificándolas y ejecutándolas (fetch → decode → execute). Las CPUs modernas emplean pipelining, ejecución superscalar y predicción de saltos para mejorar el rendimiento.</p>
+
+    <h2 class="section-title">Componentes y conceptos fundamentales</h2>
+    <center><img src="https://i.blogs.es/761a8a/intel-ivy-bridge-cpugpu/450_1000.jpg" width="400" alt="Cores CPU"></center>
+    <ul>
+      <li><strong>Núcleos (cores):</strong> unidades independientes para ejecutar hilos.</li>
+      <li><strong>Hilos (threads) / SMT:</strong> mejora el uso interno del procesador.</li>
+      <li><strong>Frecuencia (GHz):</strong> ciclos por segundo. Importa junto a IPC.</li>
+      <li><strong>IPC:</strong> instrucciones por ciclo, clave en rendimiento.</li>
+      <li><strong>TDP:</strong> consumo y disipación térmica.</li>
+    </ul>
+
+    <h2 class="section-title">Memoria caché (L1, L2, L3)</h2>
+    <center><img src="https://www.profesionalreview.com/wp-content/uploads/2019/04/memoria-cach%C3%A9-L1-L2-y-L3.jpg" width="400" alt="Memoria Cache niveles"></center>
+    <ul>
+      <li><strong>L1:</strong> muy rápida, pequeña, por núcleo.</li>
+      <li><strong>L2:</strong> más grande, latencia intermedia.</li>
+      <li><strong>L3:</strong> compartida, mayor latencia, evita acceso a RAM.</li>
+    </ul>
+
+    <h2 class="section-title">x86 vs ARM</h2>
+    <center><img src="https://static.techspot.com/images2/news/bigimage/2022/05/2022-05-30-image-8.jpg" width="450" alt="ARM vs x86"></center>
+    <ul>
+      <li><strong>x86 (CISC):</strong> alto rendimiento, compatibilidad.</li>
+      <li><strong>ARM (RISC):</strong> eficiencia energética, tendencia actual.</li>
+    </ul>
+
+    <h2 class="section-title">Técnicas de aceleración</h2>
+    <center><img src="https://en.algorithmica.org/hpc/pipelining/img/pipeline.png" width="450" alt="CPU Pipelining"></center>
+    <ul>
+      <li><strong>Pipelining</strong></li>
+      <li><strong>Ejecución fuera de orden</strong></li>
+      <li><strong>Predicción de saltos</strong></li>
+    </ul>
+
+    <h2 class="section-title">Tecnologías modernas</h2>
+    <center><img src="https://acf.geeknetic.es/imgri/imagenes/auto/21/07/20/m9r-que-es-un-chiplet-y-para-que-sirve.jpg?f=webp" width="450" alt="Chiplets AMD"></center>
+    <ul>
+      <li>Chiplets y apilamiento 3D (ej. AMD 3D V-Cache)</li>
+      <li>Aceleradores de IA integrados</li>
+    </ul>
+
+    <h2 class="section-title">Recursos recomendados</h2>
+    <ul>
+      <li><a href="https://es.wikipedia.org/wiki/Unidad_central_de_procesamiento">Wikipedia</a></li>
+      <li><a href="https://www.redhat.com/en/topics/linux/ARM-vs-x86">Red Hat</a></li>
+      <li><a href="https://www.pcgamer.com/">PC Gamer</a></li>
+      <li><a href="https://www.amd.com/content/dam/amd/en/documents/solutions/technologies/chiplet-architecture-white-paper.pdf">AMD Chiplets</a></li>
+    </ul>
+
+    <a href="index.html" class="volver">← Volver a la página principal</a>
+  </main>
+
+  <footer>
+    <p>Proyecto: Componentes de una Computadora © 2025</p>
+  </footer>
+
+</body>
+</html>
